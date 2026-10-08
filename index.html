@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e94b22" />
+    <meta name="description" content="Haz tu pedido de KING WINGS por WhatsApp." />
+    <title>KING WINGS | Pide aquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Ir al menú</a>
+
+    <header class="site-header" id="inicio">
+      <div class="topbar container">
+        <a class="brand" href="#inicio" aria-label="KING WINGS, inicio">
+          <img src="assets/logo-king-wings.png" alt="Logo de KING WINGS" />
+          <span>KING<br />WINGS</span>
+        </a>
+        <nav class="main-nav" aria-label="Categorías del menú">
+          <a href="#salchipapa">Salchipapa</a>
+          <a href="#alitas">Alitas</a>
+          <a href="#costi-alitas">Costi-alitas</a>
+          <a href="#bebidas-naturales">Naturales</a>
+          <a href="#bebidas-con-licor">Con licor</a>
+          <a href="#redes">Redes</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button admin-trigger" type="button" aria-label="Abrir panel administrador" title="Panel administrador">⚙</button>
+          <button class="cart-button" id="open-cart" type="button" aria-label="Ver carrito">
+            <span aria-hidden="true">🛒</span><span>Mi pedido</span><b id="cart-count">0</b>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">SABOR QUE MANDA</p>
+            <h1>El antojo tiene <em>corona.</em></h1>
+            <p class="hero-text">Alitas, salchipapas y bebidas para compartir. Arma tu pedido en minutos y envíalo directo a WhatsApp.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#menu">Ver el menú <span aria-hidden="true">↓</span></a>
+              <a class="button button-ghost" href="https://wa.me/573159468102" target="_blank" rel="noreferrer">Escríbenos</a>
+            </div>
+            <div class="hero-details" aria-label="Información del restaurante">
+              <span><i>✓</i> Pedido fácil</span>
+              <span><i>✓</i> Confirmación por WhatsApp</span>
+            </div>
+          </div>
+          <div class="hero-logo-wrap">
+            <div class="sticker sticker-hot">🔥 SABOR UNICO</div>
+            <div class="logo-disc"><img src="assets/logo-king-wings.png" alt="" /></div>
+            <div class="sticker sticker-crispy">CROCANTE<br />Y DELICIOSO</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" aria-label="Ir a una categoría">
+        <div class="container category-links">
+          <a href="#salchipapa"><span>🍟</span> Salchipapa</a>
+          <a href="#alitas"><span>🍗</span> Alitas</a>
+          <a href="#costi-alitas"><span>🥩</span> Costi-alitas</a>
+          <a href="#bebidas-naturales"><span>🍓</span> Naturales</a>
+          <a href="#bebidas-con-licor"><span>🍹</span> Con licor</a>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">ELIGE TU FAVORITO</p><h2>Menú del reino</h2></div>
+            <p>Todo lo que necesitas para matar el hambre con mucho sabor.</p>
+          </div>
+          <div id="menu-content" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="container steps-wrap">
+          <div><p class="eyebrow">ASÍ DE FÁCIL</p><h2>Tu pedido en<br /><em>tres pasos.</em></h2></div>
+          <ol class="steps">
+            <li><strong>01</strong><span>Elige tus productos</span></li>
+            <li><strong>02</strong><span>Revísalos en tu carrito</span></li>
+            <li><strong>03</strong><span>Envía tu pedido por WhatsApp</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="social-section" id="redes">
+        <div class="container social-card">
+          <div><p class="eyebrow">SÍGUENOS</p><h2>La buena vibra<br />también se comparte.</h2></div>
+          <div class="social-actions">
+            <a href="https://www.tiktok.com/@kingwings05" target="_blank" rel="noreferrer" class="social-link"><b>♪</b><span>TikTok<small>@kingwings05</small></span><i>↗</i></a>
+            <a href="https://wa.me/573159468102" target="_blank" rel="noreferrer" class="social-link"><b>◉</b><span>WhatsApp<small>315 946 8102</small></span><i>↗</i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <a class="brand footer-brand" href="#inicio"><img src="assets/logo-king-wings.png" alt="Logo de KING WINGS" /><span>KING<br />WINGS</span></a>
+        <p>© <span id="year"></span> KING WINGS. Hecho para antojos reales.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-header"><div><p class="eyebrow">TU SELECCIÓN</p><h2 id="cart-title">Mi pedido</h2></div><button class="close-button" id="close-cart" type="button" aria-label="Cerrar carrito">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>🛒</span><h3>Tu carrito está vacío</h3><p>Elige algo rico del menú para empezar.</p></div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-total"><span>Total estimado</span><strong id="cart-total">$0</strong></div>
+        <button class="button button-primary full-width" id="start-checkout" type="button">Continuar pedido <span>→</span></button>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+      <button class="close-button dialog-close" type="button" aria-label="Cerrar">×</button>
+      <p class="eyebrow">CASI LISTO</p><h2 id="checkout-title">Completa tu pedido</h2>
+      <p class="dialog-intro">Estos datos llegarán junto con tu pedido al WhatsApp de KING WINGS.</p>
+      <form id="checkout-form">
+        <label>Nombre<input id="customer-name" name="name" required maxlength="50" placeholder="Tu nombre" /></label>
+        <label>Dirección o mesa<input id="customer-address" name="address" required maxlength="100" placeholder="Ej.: Calle 10 # 20-30" /></label>
+        <label>Notas para el pedido <textarea id="customer-notes" name="notes" maxlength="250" placeholder="Ej.: sin salsa, punto de referencia..."></textarea></label>
+        <button class="button button-primary full-width" type="submit">Enviar a WhatsApp <span>↗</span></button>
+      </form>
+    </dialog>
+
+    <dialog class="admin-dialog" id="admin-dialog" aria-labelledby="admin-title">
+      <button class="close-button dialog-close" type="button" aria-label="Cerrar">×</button>
+      <div id="admin-login">
+        <p class="eyebrow">MODO DEMOSTRACIÓN</p><h2 id="admin-title">Panel administrador</h2>
+        <p class="dialog-intro">Ingresa la clave de demostración para editar el menú.</p>
+        <form id="admin-login-form"><label>Clave<input id="admin-password" type="password" required placeholder="Clave de demo" /></label><button class="button button-primary full-width" type="submit">Ingresar</button></form>
+      </div>
+      <div id="admin-content" hidden>
+        <div class="admin-heading"><div><p class="eyebrow">MENÚ EDITABLE</p><h2>Administrador</h2></div><button class="button button-small" id="reset-menu" type="button">Restaurar menú</button></div>
+        <p class="admin-notice">Los cambios se guardan solo en este navegador. Consulta las limitaciones en el archivo README.</p>
+        <form class="product-form" id="product-form">
+          <input id="product-id" type="hidden" />
+          <label>Producto<input id="product-name" required maxlength="50" placeholder="Nombre del producto" /></label>
+          <label>Categoría<select id="product-category" required></select></label>
+          <label>Precio<input id="product-price" required type="number" min="0" step="500" placeholder="15000" /></label>
+          <label>Descripción<input id="product-description" required maxlength="100" placeholder="Descripción corta" /></label>
+          <label>Ícono<select id="product-emoji" required><option>🍗</option><option>🍟</option><option>🥩</option><option>🍓</option><option>🍹</option><option>🥤</option></select></label>
+          <div class="form-actions"><button class="button button-primary" id="save-product" type="submit">Agregar producto</button><button class="text-button" id="cancel-edit" type="button" hidden>Cancelar edición</button></div>
+        </form>
+        <div class="admin-table-wrap"><table><thead><tr><th>Producto</th><th>Categoría</th><th>Precio</th><th>Acciones</th></tr></thead><tbody id="admin-products"></tbody></table></div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
